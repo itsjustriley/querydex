@@ -130,6 +130,63 @@ Fairy Type: D685AD
   background-color: #D685AD;
 }
 
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  margin: auto;
+  background-color: rgba(14, 14, 16, 0.885);
+  color: white;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  width: 50vw;
+  max-height: 90vh;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.533);
+}
+
+.modal button:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.modal h3 {
+  font-size: 1.5rem;
+  margin-top: 5em;
+}
+.modal h4 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.modal ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal li {
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+
+
+
 @media (max-width: 480px) {
   .pokedex {
     display: block;
